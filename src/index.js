@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import { AppRegistry } from 'react-native'
-import App from './App'
+import { StackNavigator } from 'react-navigation'
+import { Home, About } from './scenes'
 
-export default class todo_mobile extends Component {
-  render() {
-    return (
-      <App />
-    )
-  }
-}
+const todo_mobile = StackNavigator({
+  Home: {
+    screen: Home,
+    navigationOptions: ({ navigation }) => ({
+      header: null,
+    })
+  },
+  About: { screen: About }
+})
 
 AppRegistry.registerComponent('todo_mobile', () => todo_mobile)

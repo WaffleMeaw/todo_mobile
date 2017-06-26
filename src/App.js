@@ -7,6 +7,9 @@ import {
 } from 'react-native'
 
 export default class App extends Component {
+  static navigationOptions = {
+    title: 'Welcome',
+  }
   render() {
     return (
       <View style={styles.container}>
