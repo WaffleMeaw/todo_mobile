@@ -1,5 +1,5 @@
 import { StackNavigator } from 'react-navigation'
-import { Home, About } from './scenes'
+import { Home, Signup } from './scenes'
 // import App from './App'
 
 const todo_mobile = StackNavigator({
@@ -15,8 +15,8 @@ const todo_mobile = StackNavigator({
       header: null,
     })
   },
-  About: {
-    screen: About,
+  Signup: {
+    screen: Signup,
   }
 })
 

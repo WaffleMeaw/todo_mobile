@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 // create a component
-class About extends Component {
+class Signup extends Component {
   static navigationOptions = {
     title: 'About',
   }
@@ -29,4 +29,4 @@ const styles = StyleSheet.create({
 });
 
 //make this component available to the app
-export default About;
+export default Signup;
