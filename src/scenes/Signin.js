@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { View, Text, Button, StyleSheet } from 'react-native'
 import { MKTextField, MKButton } from 'react-native-material-kit'
 
-class Home extends Component {
+class Signin extends Component {
   render() {
     const { navigate } = this.props.navigation
     return (
@@ -63,4 +63,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Home
+export default Signin
