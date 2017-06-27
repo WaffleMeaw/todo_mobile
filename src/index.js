@@ -1,16 +1,9 @@
 import React, { Component } from 'react'
 import { AppRegistry } from 'react-native'
-import { StackNavigator } from 'react-navigation'
-import { Home, About } from './scenes'
+import * as firebase from 'firebase'
+import { config } from './config/firebase'
+import todo_mobile from './routes'
 
-const todo_mobile = StackNavigator({
-  Home: {
-    screen: Home,
-    navigationOptions: ({ navigation }) => ({
-      header: null,
-    })
-  },
-  About: { screen: About }
-})
+firebase.initializeApp(config)
 
 AppRegistry.registerComponent('todo_mobile', () => todo_mobile)
