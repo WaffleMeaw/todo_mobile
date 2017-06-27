@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
 import { AppRegistry } from 'react-native'
-import App from './App'
+import * as firebase from 'firebase'
+import { config } from './config/firebase'
+import todo_mobile from './routes'
 
-export default class todo_mobile extends Component {
-  render() {
-    return (
-      <App />
-    )
-  }
-}
+firebase.initializeApp(config)
 
 AppRegistry.registerComponent('todo_mobile', () => todo_mobile)
