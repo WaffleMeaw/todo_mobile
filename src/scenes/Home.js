@@ -29,7 +29,7 @@ class Home extends Component {
         <MKButton
           backgroundColor={'#ff9814'}
           shadowRadius={2}
-          shadowOffset={{ width: 0, height: 2 }}
+          shadowOffset={{ width: 2, height: 2 }}
           shadowOpacity={0.5}
           shadowColor="black"
           style={{ width: 100, height: 40, justifyContent: 'center', marginLeft: 25, }}
