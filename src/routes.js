@@ -2,6 +2,8 @@ import { StackNavigator } from 'react-navigation'
 import { Signin, Signup, Home } from './scenes'
 import App from './App'
 
+const setCustomInitialPage = ''
+
 const todo_mobile = StackNavigator(
   {
     App: {
@@ -30,8 +32,9 @@ const todo_mobile = StackNavigator(
     }
   },
   {
-    initialRouteName: 'Signin',
+    initialRouteName: setCustomInitialPage ? setCustomInitialPage : 'Signin',
   }
 )
+
 
 export default todo_mobile
